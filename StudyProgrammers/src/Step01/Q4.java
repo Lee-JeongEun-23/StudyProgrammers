@@ -1,6 +1,8 @@
 package Step01;
 
 public class Q4 {
+	
+	//자릿수 더하기
 	public int solution(int n) {
         int answer = 0;
         String arr[] = String.valueOf(n).split("");
