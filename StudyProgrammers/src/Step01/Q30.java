@@ -2,7 +2,7 @@ package Step01;
 
 public class Q30 {
 	
-	// 부족한 금액 계산하기
+	//부족한 금액 계산하기
 	public long solution(int price, int money, int count) {
         long answer = 0;
         long sum = 0;
