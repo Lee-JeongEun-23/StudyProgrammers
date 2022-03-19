@@ -23,6 +23,20 @@ public class Q34 {
         return answer;
     }
 
+	public String solutionC(String[] participant, String[] completion) {
+        Arrays.sort(participant);
+        Arrays.sort(completion);
+        String answer = "";
+        for(int i = 0; i < completion.length; i++) {
+        	if(!participant[i].equals(completion[i])) {
+        		answer = participant[i];
+        	}
+        }
+        if(answer.equals("")) {
+        	answer = participant[participant.length-1];
+        }        
+        return answer;
+    }
 	//////////////////////////////////////////	
 	public String solutionA(String[] participant, String[] completion) {
         String answer = "";
@@ -50,4 +64,5 @@ public class Q34 {
         }
         return participant[i];
     }
+	
 }
